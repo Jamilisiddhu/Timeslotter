@@ -1,0 +1,295 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - TimeSlotter</title>
+    <style>
+                body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #244855;
+            color: #FBE9D0;
+        }
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(45deg, #244855, #874F41);
+            color: white;
+            padding: 15px 30px;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            color: white
+        }
+        .search-bar input {
+            padding: 10px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            background: #FBE9D0;
+            color: #244855;
+        }
+        .account button {
+            background: #E64833;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .restaurant-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .restaurant-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 250px;
+            cursor: pointer;
+            transition: 0.3s;
+            color: black;
+        }
+        .restaurant-card img {
+            width: 100%;
+            height: 170px;
+            border-radius: 10px;
+        }
+        .restaurant-card:hover {
+            transform: scale(1.05);
+        }
+        .restaurant-card button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .restaurant-card button:hover {
+            background-color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo">TimeSlotter</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search restaurants...">
+        </div>
+        <div class="account">
+            <button onclick="window.location.href='helo.html'">Home</button>
+        </div> 
+    </header>
+
+    <section class="hero">
+        <h1>Choose Your Favorite Restaurant</h1>
+    </section>
+
+    <section class="restaurant-list">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let buttons = document.querySelectorAll(".restaurant-card button");
+                buttons.forEach(button => {
+                    button.setAttribute("onclick", "window.location.href='resbook.html'");
+                });
+            });
+        </script>
+        <div class="restaurant-card">
+            <img src="images/restaurans/bazar.jpg" alt="Bistro Premium Dine">
+            <h3>Bistro Premium Dine</h3>
+            <p>Exquisite Multi-Cuisine Experience</p>
+            <p>₹1250 for two</p>
+            <button>Reserve Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/restaurans/aer.jpg" alt="AER Rooftop Dining">
+            <h3>AER Rooftop Dining</h3>
+            <p>Luxury & Comfort Dining</p>
+            <p>₹2250 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    
+        <div class="restaurant-card">
+            <img src="images/restaurans/bidri.jpg" alt="The Grill House">
+            <h3>The Grill House</h3>
+            <p>Barbeque & Grilled Specialties</p>
+            <p>₹1700 for two</p>
+            <button>Reserve Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/restaurans/altitude.jpg" alt="Illapuram Authentic Flavors">
+            <h3>Illapuram Authentic Flavors</h3>
+            <p>Traditional South Indian Taste</p>
+            <p>₹1350 for two</p>
+            <button>Reserve Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images//restaurans/barbeque.jpg" alt="Spice Affair">
+            <h3>Spice Affair</h3>
+            <p>Spices from Around the World</p>
+            <p>₹1500 for two</p>
+            <button>Reserve Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/restaurans/minerva.jpg" alt="Ocean Breeze">
+            <h3>Minerva Grand</h3>
+            <p>Seafood & Coastal Delights</p>
+            <p>₹1800 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    
+    
+        <div class="restaurant-card">
+            <img src="images/restaurans/carna.jpg" alt="Saffron Spice">
+            <h3>Saffron Spice</h3>
+            <p>Authentic Mughlai Cuisine</p>
+            <p>₹1600 for two</p>
+            <button>Reserve Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/restaurans/fiona.jpg" alt="Bistro Cafe">
+            <h3>Bistro Cafe</h3>
+            <p>Cozy & Casual Dining</p>
+            <p>₹1100 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    
+        <div class="restaurant-card">
+            <img src="images/restaurans/food republic.jpg" alt="Haveli Taste">
+            <h3>Food Republic</h3>
+            <p>Pure Vegetarian Delicacies</p>
+            <p>₹1300 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    
+        <div class="restaurant-card">
+            <img src="images/restaurans/gingee.jpg" alt="Blue Oak">
+            <h3>Blue Oak</h3>
+            <p>Western & Continental Dining</p>
+            <p>₹1900 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    
+        <div class="restaurant-card">
+            <img src="images/restaurans/iron hill.jpg" alt="Royal Treat">
+            <h3>Royal Treat</h3>
+            <p>Traditional Royal Cuisine</p>
+            <p>₹2100 for two</p>
+            <button>Reserve Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/restaurans/lotus food city.jpg" alt="Tandoori Express">
+            <h3>Tandoori Express</h3>
+            <p>Flavors of the Tandoor</p>
+            <p>₹1450 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    
+        <div class="restaurant-card">
+            <img src="images/restaurans/mekong.jpg" alt="Dessert Delight">
+            <h3>Dessert Delight</h3>
+            <p>Sweet & Savory Treats</p>
+            <p>₹900 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    
+        <div class="restaurant-card">
+            <img src="images/restaurans/minerva grand.jpg" alt="Urban Bites">
+            <h3>Urban Bites</h3>
+            <p>Fusion Fast Food & More</p>
+            <p>₹1200 for two</p>
+            <button>Reserve Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="images/restaurans/namak.jpg" alt="Golden Plate">
+            <h3>Namak</h3>
+            <p>Royal Buffet Experience</p>
+            <p>₹2200 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    
+        <div class="restaurant-card">
+            <img src="images/restaurans/novotel.jpg" alt="Novotel">
+            <h3>Novotel</h3>
+            <p>Fine Dining with a View</p>
+            <p>₹1950 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    
+        <div class="restaurant-card">
+            <img src="images/restaurans/sai sangeet.jpg" alt="Mystic Dining">
+            <h3>Mystic Dining</h3>
+            <p>Gourmet Fusion Cuisine</p>
+            <p>₹2400 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    
+        <div class="restaurant-card">
+            <img src="images/restaurans/tfl.jpg" alt="Flavors Corner">
+            <h3>Flavors Corner</h3>
+            <p>Local & Street Food Specialties</p>
+            <p>₹1150 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    
+        <div class="restaurant-card">
+            <img src="images/restaurans/vellore kitchen.jpg" alt="Crimson Dine">
+            <h3>Crimson Dine</h3>
+            <p>Modern Fusion Cuisine</p>
+            <p>₹2000 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    
+        <div class="restaurant-card">
+            <img src="images/restaurans/vriundhu.jpg" alt="Copper Kitchen">
+            <h3>Copper Kitchen</h3>
+            <p>Rustic & Authentic Dining</p>
+            <p>₹1750 for two</p>
+            <button>Reserve Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="images/restaurans/zing.jpg" alt="Moonlight Diner">
+            <h3>Moonlight Diner</h3>
+            <p>Late Night Eats & Comfort Food</p>
+            <p>₹1280 for two</p>
+            <button>Reserve Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/restaurans/zengo.jpg" alt="Green Leaf">
+            <h3>Green Leaf</h3>
+            <p>Healthy & Organic Meals</p>
+            <p>₹1400 for two</p>
+            <button>Reserve Now</button>
+        </div>
+    </section>
+</body>
+</html>

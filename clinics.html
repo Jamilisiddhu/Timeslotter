@@ -1,0 +1,249 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - TimeSlotter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #244855;
+            color: #FBE9D0;
+        }
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(45deg, #244855, #874F41);
+            color: white;
+            padding: 15px 30px;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            color: white
+        }
+        .search-bar input {
+            padding: 10px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            background: #FBE9D0;
+            color: #244855;
+        }
+        .account button {
+            background: #E64833;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .restaurant-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .restaurant-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 250px;
+            cursor: pointer;
+            transition: 0.3s;
+            color: black;
+        }
+        .restaurant-card img {
+            width: 100%;
+            height: 170px;
+            border-radius: 10px;
+        }
+        .restaurant-card:hover {
+            transform: scale(1.05);
+        }
+        .restaurant-card button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .restaurant-card button:hover {
+            background-color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo">TimeSlotter</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search clinics...">
+        </div>
+        <div class="account">
+            <button onclick="window.location.href='helo.html'">Home</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Choose Your Favorite Clinic</h1>
+    </section>
+    <section class="restaurant-list">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let buttons = document.querySelectorAll(".restaurant-card button");
+                buttons.forEach(button => {
+                    button.setAttribute("onclick", "window.location.href='clinicbook.html'");
+                });
+            });
+        </script>
+        <div class="restaurant-card">
+            <img src="images/clinics/american.jpg" alt="American Hospital">
+            <h3>American Hospital</h3>
+            <p>World-Class Healthcare Services</p>
+            <p>Consultation Fee: ₹2000</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/apollo.jpg" alt="Apollo Hospital">
+            <h3>Apollo Hospital</h3>
+            <p>Advanced Multispecialty Healthcare</p>
+            <p>Consultation Fee: ₹1500</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/artemis.jpeg" alt="Artemis Hospital">
+            <h3>Artemis Hospital</h3>
+            <p>Leading Super-Specialty Care</p>
+            <p>Consultation Fee: ₹1800</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/blk super spec.jpg" alt="BLK Super Specialty Hospital">
+            <h3>BLK Super Specialty Hospital</h3>
+            <p>Comprehensive Medical Treatments</p>
+            <p>Consultation Fee: ₹1700</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/charite.jpg" alt="Charité Hospital">
+            <h3>Charité Hospital</h3>
+            <p>Europe’s Leading Medical Institution</p>
+            <p>Consultation Fee: ₹2500</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/columiba.jpg" alt="Columbia Asia Hospital">
+            <h3>Columbia Asia Hospital</h3>
+            <p>Efficient & International-Standard Care</p>
+            <p>Consultation Fee: ₹1400</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/fortis.jpg" alt="Fortis Healthcare">
+            <h3>Fortis Healthcare</h3>
+            <p>Trusted & Advanced Medical Services</p>
+            <p>Consultation Fee: ₹1600</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/john hopkins.jpg" alt="Johns Hopkins Hospital">
+            <h3>Johns Hopkins Hospital</h3>
+            <p>Pioneers in Medical Research & Care</p>
+            <p>Consultation Fee: ₹3000</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/manipal.jpg" alt="Manipal Hospital">
+            <h3>Manipal Hospital</h3>
+            <p>Specialized & Affordable Healthcare</p>
+            <p>Consultation Fee: ₹1300</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/mayo.jpg" alt="Mayo Clinic">
+            <h3>Mayo Clinic</h3>
+            <p>Globally Recognized Medical Excellence</p>
+            <p>Consultation Fee: ₹2800</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/medanta.jpg" alt="Medanta Hospital">
+            <h3>Medanta Hospital</h3>
+            <p>High-Tech Multispecialty Healthcare</p>
+            <p>Consultation Fee: ₹1900</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/pristine.jpg" alt="Pristine Hospital">
+            <h3>Pristine Hospital</h3>
+            <p>Advanced Surgical & Medical Care</p>
+            <p>Consultation Fee: ₹1700</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/ramesh.jpg" alt="Ramesh Hospital">
+            <h3>Ramesh Hospital</h3>
+            <p>Quality Care with Experienced Specialists</p>
+            <p>Consultation Fee: ₹1600</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/saudigerman.jpg" alt="Saudi German Hospital">
+            <h3>Saudi German Hospital</h3>
+            <p>Comprehensive & International Healthcare</p>
+            <p>Consultation Fee: ₹2100</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/toronto.jpg" alt="Toronto General Hospital">
+            <h3>Toronto General Hospital</h3>
+            <p>World-Class Medical Treatments</p>
+            <p>Consultation Fee: ₹2200</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/clinics/valiant.jpg" alt="Valiant Clinic">
+            <h3>Valiant Clinic</h3>
+            <p>Luxury Medical & Wellness Services</p>
+            <p>Consultation Fee: ₹2500</p>
+            <button>Book Now</button>
+        </div>
+    </section>
+
+
+</body>
+</html>

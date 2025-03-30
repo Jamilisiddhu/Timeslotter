@@ -1,0 +1,272 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - TimeSlotter</title>
+    <style>
+                body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #244855;
+            color: #FBE9D0;
+        }
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(45deg, #244855, #874F41);
+            color: white;
+            padding: 15px 30px;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            color: white
+        }
+        .search-bar input {
+            padding: 10px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            background: #FBE9D0;
+            color: #244855;
+        }
+        .account button {
+            background: #E64833;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .restaurant-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .restaurant-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 250px;
+            cursor: pointer;
+            transition: 0.3s;
+            color: black;
+        }
+        .restaurant-card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .restaurant-card:hover {
+            transform: scale(1.05);
+        }
+        .restaurant-card button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .restaurant-card button:hover {
+            background-color: #1e40af;
+        }
+        .restaurant-card1 {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 250px;
+            cursor: pointer;
+            transition: 0.3s;
+            color: black;
+        }
+        .restaurant-card1 img {
+            width: 100%;
+            height: 130px;
+            border-radius: 10px;
+        }
+        .restaurant-card1:hover {
+            transform: scale(1.05);
+        }
+        .restaurant-card1 button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .restaurant-card1 button:hover {
+            background-color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo">TimeSlotter</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search salons...">
+        </div>
+        <div class="account">
+            <button onclick="window.location.href='helo.html'">Home</button>
+        </div> 
+    </header>
+
+    <section class="hero">
+        <h1>Choose Your Favorite Salon</h1>
+    </section>
+    <section class="restaurant-list">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let buttons = document.querySelectorAll(".restaurant-card button");
+                buttons.forEach(button => {
+                    button.setAttribute("onclick", "window.location.href='salbook.html'");
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let buttons = document.querySelectorAll(".restaurant-card1 button");
+                buttons.forEach(button => {
+                    button.setAttribute("onclick", "window.location.href='salbook.html'");
+                });
+            });
+        </script>
+        <div class="restaurant-card">
+            <img src="images/salons/bblunt.webp" alt="BBlunt Salon">
+            <h3>BBlunt Salon</h3>
+            <p>Luxury Styling & Haircare</p>
+            <p>Starting Price: ₹1500</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/salons/kroamkay.jpg" alt="Kroamkay Salon">
+            <h3>Kroamkay Salon</h3>
+            <p>Exclusive Beauty & Grooming</p>
+            <p>Starting Price: ₹1100</p>
+            <button>Book Now</button>
+        </div>
+
+        <div class="restaurant-card">
+            <img src="images/salons/bodycraft.jpg" alt="Bodycraft Spa & Salon">
+            <h3>Bodycraft Spa & Salon</h3>
+            <p>Relaxing Spa & Beauty Services</p>
+            <p>Starting Price: ₹1200</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/salons/crec.jpg" alt="Crec Hair Studio">
+            <h3>Crec Hair Studio</h3>
+            <p>Trendy Haircuts & Treatments</p>
+            <p>Starting Price: ₹1000</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/salons/liv27.jpg" alt="Liv27 Beauty Studio">
+            <h3>Liv27 Beauty Studio</h3>
+            <p>Organic & Natural Beauty Treatments</p>
+            <p>Starting Price: ₹950</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/salons/mousee.jpg" alt="Mousee Luxury Salon">
+            <h3>Mousee Luxury Salon</h3>
+            <p>Premium Hair & Skincare Services</p>
+            <p>Starting Price: ₹1300</p>
+            <button>Book Now</button>
+        </div>
+        
+        
+        <div class="restaurant-card">
+            <img src="images/salons/nbar.jpg" alt="N.Bar Luxury Nail Spa">
+            <h3>N.Bar Luxury Nail Spa</h3>
+            <p>Specialized Nail & Beauty Services</p>
+            <p>Starting Price: ₹1200</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/salons/peaches.jpg" alt="Peaches Salon">
+            <h3>Peaches Salon</h3>
+            <p>Exclusive Beauty & Styling Services</p>
+            <p>Starting Price: ₹1100</p>
+            <button>Book Now</button>
+        </div>
+        
+        
+        <div class="restaurant-card1">
+            <img src="images/salons/green trends.jpg" alt="Green Trends">
+            <h3>Green Trends</h3>
+            <p>Premium Unisex Salon</p>
+            <p>Starting Price: ₹800</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card1">
+            <img src="images/salons/jawed habib.jpg" alt="Jawed Habib">
+            <h3>Jawed Habib</h3>
+            <p>Professional Hair & Beauty Care</p>
+            <p>Starting Price: ₹900</p>
+            <button>Book Now</button>
+        </div>
+        <div class="restaurant-card1">
+            <img src="images/salons/naturals.jpg" alt="Naturals Salon">
+            <h3>Naturals Salon</h3>
+            <p>Trusted Beauty & Grooming Experts</p>
+            <p>Starting Price: ₹1000</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card1">
+            <img src="images/salons/truefitt.jpg" alt="Truefitt & Hill">
+            <h3>Truefitt & Hill</h3>
+            <p>Premium Men's Grooming</p>
+            <p>Starting Price: ₹1500</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/salons/peter alexander.webp" alt="Peter Alexander Salon">
+            <h3>Peter Alexander Salon</h3>
+            <p>Premium Hair & Grooming Studio</p>
+            <p>Starting Price: ₹1400</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/salons/sine qua con.jpg" alt="Sine Qua Non Salon">
+            <h3>Sine Qua Non Salon</h3>
+            <p>Luxury Hair & Beauty Care</p>
+            <p>Starting Price: ₹1350</p>
+            <button>Book Now</button>
+        </div>
+    </section>
+
+</body>
+</html>

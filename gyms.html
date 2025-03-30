@@ -1,0 +1,264 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants - TimeSlotter</title>
+    <style>
+               body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #244855;
+            color: #FBE9D0;
+        }
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(45deg, #244855, #874F41);
+            color: white;
+            padding: 15px 30px;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            color: white
+        }
+        .search-bar input {
+            padding: 10px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            background: #FBE9D0;
+            color: #244855;
+        }
+        .account button {
+            background: #E64833;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .restaurant-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        .restaurant-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 250px;
+            cursor: pointer;
+            transition: 0.3s;
+            color: black;
+        }
+        .restaurant-card img {
+            width: 100%;
+            height: 230px;
+            border-radius: 10px;
+        }
+        .restaurant-card:hover {
+            transform: scale(1.05);
+        }
+        .restaurant-card button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .restaurant-card button:hover {
+            background-color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo">TimeSlotter</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search gyms...">
+        </div>
+        <div class="account">
+            <button onclick="window.location.href='helo.html'">Home</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Choose Your Favorite Gym</h1>
+    </section>
+    <section class="restaurant-list">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let buttons = document.querySelectorAll(".restaurant-card button");
+                buttons.forEach(button => {
+                    button.setAttribute("onclick", "window.location.href='gymbook.html'");
+                });
+            });
+        </script>
+        <div class="restaurant-card">
+            <img src="images/gyms/arnold.jpg" alt="Arnold Gym">
+            <h3>Arnold Gym</h3>
+            <p>High-Intensity Strength Training</p>
+            <p>Membership Fee: ₹2500/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/blitz.jpg" alt="Blitz Fitness">
+            <h3>Blitz Fitness</h3>
+            <p>Cardio & CrossFit Training</p>
+            <p>Membership Fee: ₹2200/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/body station.jpg" alt="Body Station Gym">
+            <h3>Body Station Gym</h3>
+            <p>Full-Body Workouts & Personal Training</p>
+            <p>Membership Fee: ₹2000/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/chakra.jpg" alt="Chakra Fitness Club">
+            <h3>Chakra Fitness Club</h3>
+            <p>Holistic Health & Wellness Training</p>
+            <p>Membership Fee: ₹1800/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/cult fit.jpg" alt="Cult Fit Gym">
+            <h3>Cult Fit Gym</h3>
+            <p>Group Fitness & Personal Training</p>
+            <p>Membership Fee: ₹2400/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/golds.jpg" alt="Gold's Gym">
+            <h3>Gold's Gym</h3>
+            <p>World-Class Strength & Conditioning</p>
+            <p>Membership Fee: ₹3000/month</p>
+            <button>Join Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="images/gyms/purple.jpg" alt="Purple Gym">
+            <h3>Purple Gym</h3>
+            <p>Good Conditioning and Powerlifting</p>
+            <p>Membership Fee: ₹3000/month</p>
+            <button>Join Now</button>
+        </div>
+        <div class="restaurant-card">
+            <img src="images/gyms/hustle.jpg" alt="Hustle Fitness Hub">
+            <h3>Hustle Fitness Hub</h3>
+            <p>Powerlifting & Functional Fitness</p>
+            <p>Membership Fee: ₹2100/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/kris gethin.jpg" alt="Kris Gethin Gym">
+            <h3>Kris Gethin Gym</h3>
+            <p>Celebrity Trainer Backed Gym</p>
+            <p>Membership Fee: ₹3200/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/liftgr.jpg" alt="LiftGR Gym">
+            <h3>LiftGR Gym</h3>
+            <p>Powerlifting & Strength Training</p>
+            <p>Membership Fee: ₹2300/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/lmat.jpg" alt="LMAT Fitness">
+            <h3>LMAT Fitness</h3>
+            <p>Martial Arts & Fitness</p>
+            <p>Membership Fee: ₹2500/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/o2 health.jpg" alt="O2 Health Club">
+            <h3>O2 Health Club</h3>
+            <p>Yoga & Wellness Studio</p>
+            <p>Membership Fee: ₹2000/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/slam.jpg" alt="Slam Fitness">
+            <h3>Slam Fitness</h3>
+            <p>High-Performance Training Facility</p>
+            <p>Membership Fee: ₹2700/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/steel.jpg" alt="Steel Gym">
+            <h3>Steel Gym</h3>
+            <p>Hardcore Weightlifting & Cardio</p>
+            <p>Membership Fee: ₹2200/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/swissotel.jpg" alt="Swissotel Gym & Spa">
+            <h3>Swissotel Gym & Spa</h3>
+            <p>Luxury Wellness & Fitness</p>
+            <p>Membership Fee: ₹3500/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/troop hq.jpg" alt="Troop HQ Fitness">
+            <h3>Troop HQ Fitness</h3>
+            <p>Elite Military-Style Training</p>
+            <p>Membership Fee: ₹2900/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/we fitness.jpg" alt="We Fitness Club">
+            <h3>We Fitness Club</h3>
+            <p>Inclusive & Modern Workout Space</p>
+            <p>Membership Fee: ₹2000/month</p>
+            <button>Join Now</button>
+        </div>
+        
+        <div class="restaurant-card">
+            <img src="images/gyms/xcel.jpg" alt="XCEL Performance Center">
+            <h3>XCEL Performance Center</h3>
+            <p>Athlete-Focused Strength & Conditioning</p>
+            <p>Membership Fee: ₹2800/month</p>
+            <button>Join Now</button>
+        </div>
+    </section>
+
+
+
+</body>
+</html>

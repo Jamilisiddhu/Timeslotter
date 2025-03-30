@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeSlotter - Booking App</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #244855;
+            color: #FBE9D0;
+        }
+        .top-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(45deg, #244855, #874F41);
+            color: white;
+            padding: 15px 30px;
+        }
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            color: white
+        }
+        .search-bar input {
+            padding: 10px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            background: #FBE9D0;
+            color: #244855;
+        }
+        .account button {
+            background: #E64833;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 20px;
+            flex-wrap: nowrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .service-card {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(255,255,255,0.1);
+            text-align: center;
+            width: 220px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .service-card img {
+            width: 100%;
+            height: 131px;
+            object-fit: cover;
+            border-radius: 10px 10px 10px 10px;
+        }
+        .offer {
+            background: #E64833;
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 5px;
+        }
+        .service-card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 10px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo">TimeSlotter</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter your location">
+            
+        </div>
+        <div class="account">
+            <a href="login.html" class="account-button" style="background: #E64833; color: white; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Sign In</a>
+            <a href="cancel.html" class="account-button" style="background: #E64833; color: white; text-decoration: none; padding: 10px 15px; border-radius: 5px; font-weight: bold;">Cancel Booking</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Book Appointments with Ease!</h1>
+        <p>Find the best restaurants, salons, gyms, movies, and clinics near you and book instantly.</p>
+    </section>
+
+    <section class="services">
+        <div class="service-card" onclick="window.location.href='restaurants.html'">
+            <span class="offer">UPTO 60% OFF</span>
+            <img src="restaurant.jpg" alt="Restaurant">
+            <h3>Restaurants</h3>
+            <p>Find and book top-rated restaurants.</p>
+        </div>        
+        <div class="service-card" onclick="window.location.href='salons.html'">
+            <span class="offer">UPTO 50% OFF</span>
+            <img src="salon.jpg" alt="Salon">
+            <h3>Salons</h3>
+            <p>Book appointments at the best salons.</p>
+        </div>
+        <div class="service-card" onclick="window.location.href='movies.html'">
+            <span class="offer">Buy 1 Get 1 Free</span>
+            <img src="movies.jpg" alt="Movies">
+            <h3>Movies</h3>
+            <p>Reserve tickets for your favorite films.</p>
+        </div>
+        <div class="service-card" onclick="window.location.href='clinics.html'">
+            <span class="offer">Flat 30% OFF</span>
+            <img src="clinic.jpg" alt="Clinic">
+            <h3>Clinics</h3>
+            <p>Schedule consultations with top clinics.</p>
+        </div>
+        <div class="service-card" onclick="window.location.href='gyms.html'">
+            <span class="offer">Special Membership</span>
+            <img src="gym.jpg" alt="Gym">
+            <h3>Gyms</h3>
+            <p>Book your workout sessions easily.</p>
+        </div>
+    </section>
+</body>
+</html>
